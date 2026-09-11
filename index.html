@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction One</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 20px 30px;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        header p {
+            margin-top: 5px;
+            color: #d1d5db;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .welcome {
+            margin-bottom: 25px;
+        }
+
+        .welcome h2 {
+            font-size: 24px;
+        }
+
+        .welcome p {
+            margin-top: 8px;
+            color: #666;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .modules {
+            margin-top: 35px;
+        }
+
+        .modules h2 {
+            margin-bottom: 20px;
+        }
+
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .module {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            cursor: pointer;
+        }
+
+        .module:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+        }
+
+        .module span {
+            font-size: 28px;
+        }
+
+        .module h3 {
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🏗️ Construction One</h1>
+        <p>Construction Management System</p>
+    </header>
+
+    <div class="container">
+
+        <div class="welcome">
+            <h2>Project Dashboard</h2>
+            <p>Welcome to Construction One</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Projects</h3>
+                <div class="number">5</div>
+            </div>
+
+            <div class="card">
+                <h3>Total Flats</h3>
+                <div class="number">200</div>
+            </div>
+
+            <div class="card">
+                <h3>Completed</h3>
+                <div class="number">150</div>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <div class="number">50</div>
+            </div>
+
+        </div>
+
+        <div class="modules">
+
+            <h2>Modules</h2>
+
+            <div class="module-grid">
+
+                <div class="module">
+                    <span>🏢</span>
+                    <h3>Projects</h3>
+                </div>
+
+                <div class="module">
+                    <span>🏠</span>
+                    <h3>Flat Tracker</h3>
+                </div>
+
+                <div class="module">
+                    <span>📋</span>
+                    <h3>DPR</h3>
+                </div>
+
+                <div class="module">
+                    <span>🎯</span>
+                    <h3>Targets</h3>
+                </div>
+
+                <div class="module">
+                    <span>🛒</span>
+                    <h3>Purchase Orders</h3>
+                </div>
+
+                <div class="module">
+                    <span>📑</span>
+                    <h3>Work Orders</h3>
+                </div>
+
+                <div class="module">
+                    <span>⚠️</span>
+                    <h3>Snag / Desnag</h3>
+                </div>
+
+                <div class="module">
+                    <span>📊</span>
+                    <h3>Reports</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        Construction One © 2026
+    </footer>
+
+</body>
+</html>
